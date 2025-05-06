@@ -97,6 +97,7 @@ A 15-minute walkthrough showing all major functionalities, including:
 - Backend and API overview
 
 ▶️ [Watch the demo](https://youtu.be/JhDAxj5bkl8)  
+AOK DOWNLOAD LINK: https://drive.google.com/file/d/17W3MI54cf6cIAn68YvAQtOu7Z3fdsOvb/view?usp=sharing
 *(Ensure video is public and tested externally)*
 
 ---
