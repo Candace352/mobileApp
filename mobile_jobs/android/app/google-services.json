@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "66734429125",
+    "project_id": "mobilejobs-18747",
+    "storage_bucket": "mobilejobs-18747.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66734429125:android:c5226a3b2c3881bfbe71ac",
+        "android_client_info": {
+          "package_name": "com.example.mobile_jobs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFHbUM0U_-r_98rUu7lu0-pdFkj1ZRdXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66734429125:android:74bcf165fafed7c4be71ac",
+        "android_client_info": {
+          "package_name": "com.example.mobilejobs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFHbUM0U_-r_98rUu7lu0-pdFkj1ZRdXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

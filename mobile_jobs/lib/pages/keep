@@ -1,0 +1,163 @@
+// // ignore_for_file: prefer_const_constructors, avoid_print, library_private_types_in_public_api, unused_import
+// import 'package:flutter/material.dart';
+// import 'package:mobile_jobs/pages/job_detail_page.dart';
+// import 'package:mobile_jobs/pages/profile.dart';
+// import 'package:mobile_jobs/pages/search.dart';
+
+// class JobSeekerHomePage extends StatefulWidget {
+//   const JobSeekerHomePage({Key? key}) : super(key: key);
+
+//   @override
+//   State<JobSeekerHomePage> createState() => _JobSeekerHomePageState();
+// }
+
+// class _JobSeekerHomePageState extends State<JobSeekerHomePage> {
+//   final List<Map<String, String>> _jobListings = [
+//     {
+//       'title': 'Software Engineer',
+//       'company': 'TechCorp',
+//       'location': 'Harare, Zimbabwe',
+//       'salary': 'USD 2000/month',
+//     },
+//     {
+//       'title': 'Data Analyst',
+//       'company': 'DataAnalytics Co.',
+//       'location': 'Chitungwiza, Zimbabwe',
+//       'salary': 'USD 1500/month',
+//     },
+//     {
+//       'title': 'Marketing Manager',
+//       'company': 'Brandify Ltd.',
+//       'location': 'Bulawayo, Zimbabwe',
+//       'salary': 'USD 1800/month',
+//     },
+//   ];
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Job Finder'),
+//         backgroundColor: const Color(0xFFdc2f02),
+//         actions: [
+//           IconButton(
+//             icon: Icon(Icons.person),
+//             onPressed: () {
+//               Navigator.push(
+//                 context,
+//                 MaterialPageRoute(builder: (context) => const ProfilePage()),
+//               );
+//             },
+//           ),
+//         ],
+//       ),
+//       body: SingleChildScrollView(
+//         child: Column(
+//           children: [
+//             // Search bar for job searching
+//             Padding(
+//               padding: const EdgeInsets.all(16.0),
+//               child: TextFormField(
+//                 decoration: InputDecoration(
+//                   prefixIcon: Icon(Icons.search),
+//                   labelText: 'Search Jobs...',
+//                   border: OutlineInputBorder(),
+//                 ),
+//                 onTap: () {
+//                   Navigator.push(
+//                     context,
+//                     MaterialPageRoute(builder: (context) => const SearchPage()),
+//                   );
+//                 },
+//               ),
+//             ),
+
+//             // Job Listings Section
+//             Padding(
+//               padding: const EdgeInsets.all(16.0),
+//               child: Column(
+//                 crossAxisAlignment: CrossAxisAlignment.start,
+//                 children: [
+//                   const Text(
+//                     'Latest Job Listings',
+//                     style: TextStyle(
+//                       fontSize: 20,
+//                       fontWeight: FontWeight.bold,
+//                     ),
+//                   ),
+//                   const SizedBox(height: 16),
+//                   ListView.builder(
+//                     shrinkWrap: true,
+//                     physics: NeverScrollableScrollPhysics(),
+//                     itemCount: _jobListings.length,
+//                     itemBuilder: (ctx, index) {
+//                       final job = _jobListings[index];
+//                       return Card(
+//                         margin: const EdgeInsets.only(bottom: 16),
+//                         elevation: 5,
+//                         child: ListTile(
+//                           contentPadding: const EdgeInsets.all(16),
+//                           title: Text(
+//                             job['title']!,
+//                             style: TextStyle(fontWeight: FontWeight.bold),
+//                           ),
+//                           subtitle: Column(
+//                             crossAxisAlignment: CrossAxisAlignment.start,
+//                             children: [
+//                               Text(job['company']!),
+//                               Text(job['location']!),
+//                               Text(job['salary']!),
+//                             ],
+//                           ),
+//                           trailing: Icon(Icons.arrow_forward),
+//                           onTap: () {
+//                             Navigator.push(
+//                               context,
+//                               MaterialPageRoute(
+//                                 builder: (context) =>
+//                                     JobDetailPage(jobId: job.toString()),
+//                               ),
+//                             );
+//                           },
+//                         ),
+//                       );
+//                     },
+//                   ),
+//                 ],
+//               ),
+//             ),
+//           ],
+//         ),
+//       ),
+//       bottomNavigationBar: BottomNavigationBar(
+//         backgroundColor: const Color(0xFFdc2f02),
+//         selectedItemColor: Colors.white,
+//         unselectedItemColor: Colors.white54,
+//         items: const [
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.home),
+//             label: 'Home',
+//           ),
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.notifications),
+//             label: 'Notifications',
+//           ),
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.account_circle),
+//             label: 'Profile',
+//           ),
+//         ],
+//         onTap: (index) {
+//           // Handle navigation actions
+//           if (index == 2) {
+//             Navigator.push(
+//               context,
+//               MaterialPageRoute(builder: (context) => const ProfilePage()),
+//             );
+//           }
+//         },
+//       ),
+//     );
+//   }
+// }
+

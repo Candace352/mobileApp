@@ -1,0 +1,69 @@
+name: mobile_jobs
+description: "A job search mobile application"
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.1 <4.0.0'  # More precise SDK constraint
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core Flutter packages
+  cupertino_icons: ^1.0.8
+  intl: ^0.20.2  # For date/time formatting
+
+  # State management & local storage
+  shared_preferences: ^2.5.3
+  provider: ^6.1.1  # Recommended for state management
+
+  # Networking
+  http: ^1.3.0
+  dio: ^5.3.3  # More powerful than http package
+
+  # Firebase Core (always required)
+  firebase_core: ^3.13.0
+
+  # Firebase Services
+  firebase_auth: ^5.5.3
+  cloud_firestore: ^5.6.7
+  cloud_functions: ^5.5.0
+  firebase_storage: ^12.4.5  # For profile pictures
+
+  # UI Components
+  google_maps_flutter: ^2.12.1
+  cached_network_image: ^3.3.0  # For efficient image loading
+  fluttertoast: ^8.2.2  # For toast messages
+  file_picker: ^10.1.2
+  path_provider: ^2.1.1
+  open_filex: ^4.3.3
+  image_picker: ^1.1.2
+  hive: ^2.2.3
+  camera: ^0.11.1
+  hive_flutter: ^1.1.0
+  permission_handler: ^12.0.0+1
+  device_info_plus: ^11.3.0
+  shelf_router: ^1.1.4
+  isar: ^3.1.0+1
+  firebase_messaging: ^15.2.5
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0  # Updated version
+  flutter_launcher_icons: ^0.14.3  # For app icons
+
+flutter:
+  uses-material-design: true
+
+  # Enable generated fonts
+  generate: true
+
+  assets:
+    # Remove this line if it exists
+    # # - assets/logo.png
+    # - assets/logo.jpg
+    - lib/assets/logo.jpg

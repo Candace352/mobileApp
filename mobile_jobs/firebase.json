@@ -1,0 +1,59 @@
+{
+  "functions": {
+    "source": "functions",
+    "codebase": "default",
+    "ignore": [
+      "node_modules",
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "*.local"
+    ],
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
+    ]
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "mobilejobs-18747",
+          "appId": "1:66734429125:android:c5226a3b2c3881bfbe71ac",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "mobilejobs-18747",
+          "appId": "1:66734429125:ios:d6783d6044d9d58abe71ac",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "mobilejobs-18747",
+          "appId": "1:66734429125:ios:d6783d6044d9d58abe71ac",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "mobilejobs-18747",
+          "configurations": {
+            "android": "1:66734429125:android:c5226a3b2c3881bfbe71ac",
+            "ios": "1:66734429125:ios:d6783d6044d9d58abe71ac",
+            "macos": "1:66734429125:ios:d6783d6044d9d58abe71ac",
+            "web": "1:66734429125:web:db52b4a278920496be71ac",
+            "windows": "1:66734429125:web:0b6d6fd0e2c2f1d2be71ac"
+          }
+        }
+      }
+    }
+  }
+}
